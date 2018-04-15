@@ -13,7 +13,9 @@ Create the topics
 
 Once the topics are ready, launch each file in a new terminal tab. To start any one of the files, simply do:
 
-`python producer1.py`
+`python producer1.py & python producer2.py & python producer3.py`
 
-Once all the producers and consumers are running, you will begin to the see the calculated coordinates inferred from consumers_loc.py
+To read, run `python consumer.py` in one tab and `python consumer_loc.py` in the other. 
+
+Once all the producers and consumers are running, you will begin to the see the calculated coordinates on consumers_loc.py
 
