@@ -6,9 +6,9 @@ Different producers represent different sensors recording information about a ce
 
 Different sensors have differing levels of accuracy and must be considered relatively when calculating the actual value. 
 
-The Consumer consumes information from the 3 sensors and tries to accurately infer the correct coordinates of the object that is trying to be tracked. 
+The Consumer consumes information from the 3 sensors and tries to accurately infer the correct coordinates of the object that is being tracked. The Consumer reports this value to a new topic called 'location' which has a different consumer (consumer_loc.py) which reports the inferred location.
 
-There can be cases where the real time information (which is accurate as possible) about the coordinates is required and this time sensivity may make wrong inferences expensive. In that case, we take a moving average of the reported coordinates and report updated information real time. Well by Strong Law of Large Numbers, these estimates will converge to the real values eventually! 
+There can be cases where the real time information (as accurate as possible) about the coordinates is required and this time sensivity may make wrong inferences expensive. In that case, we take a moving average of the reported coordinates and report updated information real time. By Strong Law of Large Numbers, these estimates will converge to the real values eventually! 
 
 ## To setup
 Install the required library
