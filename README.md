@@ -11,7 +11,7 @@ Create the topics
 
 `bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic location`
 
-Once the topics are ready, launch each file in a new terminal tab. To start any one of the files, simply do:
+Once the topics are ready, launch each file in a new terminal tab. To start all of the producers, simply do:
 
 `python producer1.py & python producer2.py & python producer3.py`
 
