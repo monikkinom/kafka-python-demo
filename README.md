@@ -1,6 +1,15 @@
 # kafka-python-demo
 Kafka Python Demo
 
+## What does it do?
+Different producers represent different sensors recording information about a certain activity. They provide coordinates about where they observed the activity. 
+
+Different sensors have differing levels of accuracy and must be considered relatively when calculating the actual value. 
+
+The Consumer consumes information from the 3 sensors and tries to accurately infer the correct coordinates of the object that is trying to be tracked. 
+
+There can be cases where the real time information (which is accurate as possible) about the coordinates is required and this time sensivity may make wrong inferences expensive. In that case, we take a moving average of the reported coordinates and report updated information real time. Well by Strong Law of Large Numbers, these estimates will converge to the real values eventually! 
+
 ## To setup
 Install the required library
 `pip install kafka-python`
